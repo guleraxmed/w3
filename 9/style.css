@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor: rgb(37, 116, 37);
+}
+ img{
+     width: 50px;
+     height: 50px;
+     display: inline-block;
+     
+ }
+ header{
+     display: flex;
+     justify-content: space-between;
+ }
+header ul li{
+     display: inline;
+     padding: 25px ;
+ }
+
+  header ul li:hover{
+     color: #fff;
+     cursor: pointer;
+     border: 0 solid var(--maincolor);
+     background-color:var(--maincolor);
+     padding: 25px ;
+ }
+
+ button{
+    width: 120px;
+    font-weight: bold;
+    color: #fff;
+ }
+ #button1{
+     border:0 solid pink ;
+     background-color: pink;
+     border-radius: 45px;  
+     color:#000;
+ }
+
+ #button2{
+     border: none;
+     background-color: #fff;
+     color: #000;
+
+ }
+ #button3{
+    border:0 solid var(--maincolor) ;
+    background-color:rgb(28, 97, 28);
+    border-radius: 45px;  
+ }
+
+ #button1:hover,#button2:hover, #button:hover{
+    border:0 solid var(--maincolor) ;
+    background-color: var(--maincolor);
+    border-radius: 45px; 
+    
+ }
+ nav i{
+     padding: 5px 10px;
+     
+ }
+ #ham{
+     display: none;
+ }
+ nav i:hover{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: black;
+ }
+ div {
+     display: inline-block;
+ }
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: rgb(58, 57, 57);
+     color: #fff;
+     font-weight: bold;
+     padding: 5px;
+     
+ }
+ ul{
+     margin-bottom: 0px !important;
+ }
+ nav  ul li{
+    display: inline;
+    padding: 0px 5px ;
+    
+}
+nav ul li:hover{
+    color:#fff;
+    cursor: pointer;
+    border: 0 solid black;
+    background-color:black;
+    /* margin: 0px 5px ; */
+    padding: 5px;
+}
+.card{
+    width: 250px;
+    animation-name: card;
+    animation-duration: 0,5s;
+    animation-fill-mode: forwards;
+    left: -400px;
+    position: absolute;
+    
+}
+@keyframes card {
+    from{
+        left: -400px;
+
+    }
+    to{
+        left: 0px;
+
+    }
+}
+.card ul li{
+    list-style: none;
+}
+.card ul li:hover{
+    cursor: pointer;
+    background-color: rgb(211, 210, 210);
+}
+h2{
+    font-weight: normal !important;
+}
+@media screen and (max-width: 768px) {
+   
+  header ul :nth-child(3),header ul :nth-child(4) {
+display: none;
+   }
+   nav ul :nth-last-child(1),nav ul :nth-last-child(2),nav ul :nth-last-child(3),nav ul :nth-last-child(4),nav ul :nth-last-child(5),nav ul :nth-last-child(6),
+   nav ul :nth-last-child(7),nav ul :nth-last-child(8),nav ul :nth-last-child(9),nav ul :nth-last-child(10),nav ul :nth-last-child(11),nav ul :nth-last-child(12){
+       display: none;
+   }
+   #button1,#button2{
+       display: none;
+   }
+  #ham{
+       display: inline-block;
+   }
+}
